@@ -1,0 +1,24 @@
+
+#frm {
+    width: 25%;
+    border-radius: 2px;
+    padding: 50px 0 0 100px;
+}
+
+#btn {
+    color: #fff;
+    background: #337ab7;
+    padding: 7px;
+    margin-left: 15%;
+	border-radius: 0px;
+	cursor: pointer;
+}
+
+@media screen and(max-width: 320px) {
+    .rlform .rlform-wrapper {
+        width: 100%;
+    }
+    .rlform .rlform-box {
+        padding: 0 10px;
+    }
+}

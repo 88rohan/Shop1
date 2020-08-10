@@ -1,0 +1,47 @@
+body{
+     background-image:linear-gradient( to top right);
+	 }
+ol li{
+margin-left:20px;
+padding:4px;
+}
+ul{
+  list-style-type:square;
+}
+ol.B{
+  list-style-type:upper-alpha;
+}
+ol.C{
+  list-style-type:lower-alpha;
+}
+ol.D{
+  list-style-type:upper-roman;
+}
+ol.E{
+  list-style-type:lower-roman;
+}
+ol.F{
+  list-style-type:lower-greek;
+}
+article{
+   display:flex;
+}
+#images{
+	margin-top:20px;
+   padding-left:20%;
+}
+#images1{
+	margin-top:20px;
+   padding-left:30%;
+}
+a{
+   margin-bottom:5px;
+}
+@media screen and(max-width: 320px) {
+    .rlform .rlform-wrapper {
+        width: 100%;
+    }
+    .rlform .rlform-box {
+        padding: 0 10px;
+    }
+}
