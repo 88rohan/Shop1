@@ -44,30 +44,35 @@ include("register_db.php");
                                 <?php }
                             ?>
                         </div>
-						<span style="color:red">all fields are required</span>
+						<span class="star">* required field</span>
                         <div class="rlform-group">
                         
-                            <input type="text" name="fullName" placeholder="Full Name"class="rlform-input" id="fullName" required>            
+                            <input type="text" name="fullName" placeholder="Full Name"class="rlform-input" id="fullName" required>  
+							<span class="star">*</span>
                         </div>
                         <div class="rlform-group">
                             
-                            <input type="email" placeholder="Email"name="email" class="rlform-input" id="email" required>            
+                            <input type="email" placeholder="Email"name="email" class="rlform-input" id="email" required>
+							<span class="star">*</span>
                         </div>
 						<div class="rlform-group">
                             
-							<input type="digit"placeholder="Mobile Number" maxlength="10" minlength="10" name="mobile" class="rlform-input" id="number" required>           
+							<input type="digit"placeholder="Mobile Number" maxlength="10" minlength="10" name="mobile" class="rlform-input" id="number" required>   
+							<span class="star">*</span>
                         </div>
 						<div class="rlform-group">
                             
-							<input type="text"placeholder="GST Number" name="gst" class="rlform-input" id="gst" required>         
+							<input type="text"placeholder="GST Number" name="gst" class="rlform-input" id="gst" required> <span class="star">*</span>        
                         </div>
                         <div class="rlform-group">
                             
                             <input type="password" placeholder="Password" name="newPassword" class="rlform-input" id="newPass" required>
+							<span class="star">*</span>
                         </div>
                         <div class="rlform-group">
                            
                             <input type="password" placeholder="Conform Password" name="conformPassword" class="rlform-input" id="conformPass" required>
+							<span class="star">*</span>
 							<div id="passmatch"><?php 
                                 if (@$_GET['passErr']==true) 
                                 {?>

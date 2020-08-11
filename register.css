@@ -13,6 +13,10 @@ body{
     font-size: 14px;
 }
 
+.star{
+	padding-top:0px;
+	color:red;
+}
 .rlform .rlform-wrapper {
     -webkit-transition: all 1s;
     -o-transition: all 1s;
@@ -76,7 +80,7 @@ body{
     border: solid gray 1px;
     border-radius: 3px;
     padding: 15px 20px;
-    width: 90%;
+    width: 96%;
     outline: 0;
 }
 
@@ -114,12 +118,7 @@ body{
     margin-top: 20px;
     color: var(--color-semidark);
 }
-#header{
-	background-color:powderblue;
-	background-repeat:no-repeat;
-	background-position:cover;
-	padding:5px 0px 15px 0;
-}
+
 @media screen and(max-width: 320px) {
     .rlform .rlform-wrapper {
         width: 100%;
