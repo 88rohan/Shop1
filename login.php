@@ -22,7 +22,7 @@
 </header>
 <div class="bg">
 <div id = "frm">  
-        <h1 align="centre"><u>Login</u></h1>  
+        <h1 id="login"><u>Login</u></h1>  
         <span id="UpErr">
 		<?php
 			if(@$_GET['err']==true)
@@ -34,12 +34,12 @@
         <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
             <p>  
                 <!-- <label> UserName: </label>   -->
-                <input placeholder="             Username" type = "email" id ="user" name  = "user" class="inputbox"><span id="UErr"></span>
+                <input placeholder="                      Username" type = "email" id ="user" name  = "user" class="inputbox"><span id="UErr"></span>
                   
             </p>  
             <p>  
                 <!-- <label> Password: </label>   -->
-                <input placeholder="             Password" type = "password" id ="pass" name  = "pass" class="inputbox"> <span id="PErr"></span>
+                <input placeholder="                      Password" type = "password" id ="pass" name  = "pass" class="inputbox"> <span id="PErr"></span>
             </p>  
             <p>     
                 <input type =  "submit" id = "btn" placeholder=" Login " value="Login" />

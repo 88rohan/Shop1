@@ -13,7 +13,7 @@ if(strcmp(($_POST['newPassword']),($_POST['conformPassword']))==0)
 	//Register
 	if(isset($_POST['signUp']))
 	{
-		if(empty($_POST['fullName']) || empty($_POST['email']) || empty($_POST['newPassword'])|| empty($_POST['mobile']) ){
+		if(empty($_POST['fullName']) || empty($_POST['email']) || empty($_POST['newPassword'])|| empty($_POST['mobile'])||empty($_POST['gst']) ){
 			
 			header("location: register.php?Empty=Please fill up all the required field.");
 			// echo "Please fill up all the required field.";
@@ -26,6 +26,7 @@ if(strcmp(($_POST['newPassword']),($_POST['conformPassword']))==0)
 			// $confpass = $_POST['conformPassword'];
 			$mobile = $_POST['mobile'];
 			// $hash = password_hash($password, PASSWORD_DEFAULT);
+			$gst=$_POST['gst'];
 		   
 			include('config.php');
 				//check connection
@@ -41,7 +42,7 @@ if(strcmp(($_POST['newPassword']),($_POST['conformPassword']))==0)
 			}
 			else
 			{
-				$sql = "INSERT into register(fullName, email, password, mobile) values('$fullName','$email','$password','$mobile')";
+				$sql = "INSERT into register(fullName, email, password, mobile,gst) values('$fullName','$email','$password','$mobile','$gst')";
 				if ($conn->query($sql) === TRUE) {
 					header("location:login.php?msg=Registration Sucessfull.<br>Please login");
 					

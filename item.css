@@ -1,9 +1,6 @@
-body{
-     background-image:linear-gradient( to top right);
-	 }
 ol li{
-margin-left:20px;
-padding:4px;
+  margin-left:20px;
+  padding:4px;
 }
 ul{
   list-style-type:square;

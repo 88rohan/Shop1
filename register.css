@@ -1,4 +1,6 @@
-
+body{
+    background-color: rgb(231, 228, 228);;
+}
 .rlform {
     /*variable*/
     --color-primary: #ff9800;
@@ -74,7 +76,7 @@
     border: solid gray 1px;
     border-radius: 3px;
     padding: 15px 20px;
-    width: 100%;
+    width: 90%;
     outline: 0;
 }
 

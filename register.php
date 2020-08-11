@@ -6,7 +6,7 @@ include("register_db.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="rlform.css">
+    <link rel="stylesheet" href="register.css">
 	<link rel="stylesheet" type="text/css" href="shop1.css">
     <title>Register</title>
 </head>
@@ -29,6 +29,7 @@ include("register_db.php");
                 <div class="rlform-box-inner">
                     <form action="register_db.php" method="post" onsubmit="return validPassword()">
                         <p>Let's create your account</p>
+						
                         <div class="rlform-group">
                             <?php 
                                 if (@$_GET['Empty']==true) 
@@ -43,6 +44,7 @@ include("register_db.php");
                                 <?php }
                             ?>
                         </div>
+						<span style="color:red">all fields are required</span>
                         <div class="rlform-group">
                         
                             <input type="text" name="fullName" placeholder="Full Name"class="rlform-input" id="fullName" required>            
@@ -54,6 +56,10 @@ include("register_db.php");
 						<div class="rlform-group">
                             
 							<input type="digit"placeholder="Mobile Number" maxlength="10" minlength="10" name="mobile" class="rlform-input" id="number" required>           
+                        </div>
+						<div class="rlform-group">
+                            
+							<input type="text"placeholder="GST Number" name="gst" class="rlform-input" id="gst" required>         
                         </div>
                         <div class="rlform-group">
                             
